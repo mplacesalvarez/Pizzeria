@@ -71,11 +71,15 @@ public class Pizzeria extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        Pedido ir= new Pedido();
+        ir.setVisible(true);//Para abrir a outra pestaña 
+        this.setVisible(false);//Para pechar a actual
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        Menu ir= new Menu();
+        ir.setVisible(true);//Para abrir a outra pestaña
+        this.setVisible(false);//Para pechar a actual
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
