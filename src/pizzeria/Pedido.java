@@ -390,13 +390,19 @@ public class Pedido extends javax.swing.JFrame {
             fw = new FileWriter(fi.getAbsoluteFile(), true);
             bw = new BufferedWriter(fw);
 
-            bw.write(Nombre.getText()+", ");
-            bw.write(DNI.getText()+", ");
-            bw.write(Calle.getText()+", ");
-            bw.write(Numero.getText()+", ");
-            bw.write(Piso.getText()+", ");
-            //bw.write(Masa.()+", ");
-            bw.write("\n");
+           
+            bw.write("\nNombre: "+Nombre.getText()+"\n ");
+            bw.write("Dni: "+DNI.getText()+"\n ");
+            bw.write("Calle: "+Calle.getText()+", ");
+            bw.write("Número: "+Numero.getText()+", ");
+            bw.write("Piso: "+Piso.getText()+"\n ");
+            bw.write("\nPizza:\n");
+            bw.write("Masa: "+Masa.getSelectedItem()+"\n ");
+            bw.write("Tipo: "+Tipos.getSelectedItem()+"\n ");
+            bw.write("Tamaño: "+Tamaño.getSelectedItem()+"\n ");
+            bw.write("Bebida: "+Bebidas.getSelectedItem()+"\n ");
+            bw.write("Complemento: "+Complementos.getSelectedItem()+"\n ");
+            bw.write("\n-------------------------");
 
         } catch (IOException ex) {
             System.out.println("Error al crear el ticket");
