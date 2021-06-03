@@ -96,17 +96,15 @@ public class Pizzeria extends javax.swing.JFrame {
                 .addGap(60, 60, 60)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(121, 121, 121))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(182, 182, 182)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(jLabel3)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))))
                 .addContainerGap(169, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -189,7 +187,7 @@ public class Pizzeria extends javax.swing.JFrame {
         try{
             Pedido irPedido= new Pedido();
             irPedido.setVisible(true);//Para abrir a outra pestaña
-            this.setVisible(false);//Para pechar a actual
+            //Para pechar a actual
         }catch(NullPointerException ex){}
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -5,6 +5,11 @@
  */
 package pizzeria;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
 /**
  *
  * @author manuel
@@ -170,34 +175,6 @@ public class Menu extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel24)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(87, 87, 87)
-                                                .addComponent(jLabel1)))
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel29)
-                                        .addGap(32, 32, 32)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(64, 64, 64)
-                                                .addComponent(jLabel6))
-                                            .addComponent(jLabel30)))
-                                    .addComponent(jLabel23)
-                                    .addComponent(jLabel26)
-                                    .addComponent(jLabel25)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(375, 375, 375)
-                                        .addComponent(jLabel34)
-                                        .addGap(42, 42, 42)
-                                        .addComponent(jLabel33))
-                                    .addComponent(jLabel27)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel31)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel35))
-                                    .addGroup(layout.createSequentialGroup()
                                         .addGap(43, 43, 43)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
@@ -221,17 +198,44 @@ public class Menu extends javax.swing.JFrame {
                                                 .addComponent(jLabel11)
                                                 .addGap(120, 120, 120)
                                                 .addComponent(jLabel12)
-                                                .addGap(142, 142, 142)
+                                                .addGap(148, 148, 148)
                                                 .addComponent(jLabel13)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addComponent(jLabel14)
-                                                .addGap(70, 70, 70))))
+                                                .addGap(66, 66, 66))))
+                                    .addComponent(jLabel24)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(47, 47, 47)
+                                        .addGap(87, 87, 87)
+                                        .addComponent(jLabel1))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel29)
+                                        .addGap(32, 32, 32)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel8))
-                                        .addGap(21, 21, 21)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(64, 64, 64)
+                                                .addComponent(jLabel6))
+                                            .addComponent(jLabel30)))
+                                    .addComponent(jLabel23)
+                                    .addComponent(jLabel26)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(375, 375, 375)
+                                        .addComponent(jLabel34)
+                                        .addGap(42, 42, 42)
+                                        .addComponent(jLabel33))
+                                    .addComponent(jLabel27)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel31)
+                                        .addGap(31, 31, 31)
+                                        .addComponent(jLabel35))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel25)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(47, 47, 47)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel2)
+                                                    .addComponent(jLabel8))))
+                                        .addGap(44, 44, 44)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel3)
                                             .addComponent(jLabel9))
@@ -239,7 +243,7 @@ public class Menu extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel10)
                                             .addComponent(jLabel20))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(88, 88, 88)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -293,17 +297,21 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel23)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel10))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel25)
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel25)
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10))
+                        .addGap(51, 51, 51)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel3))))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel26)
                 .addGap(18, 18, 18)
@@ -408,4 +416,20 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
-}
+}class FondoPanel extends JPanel
+    {
+        private Image imagen;
+        
+        @Override
+        public void paint(Graphics g)
+        {
+            imagen = new ImageIcon(getClass().getResource("/Imagenes/Fondo.png")).getImage();
+            
+            g.drawImage(imagen,0, 0, getWidth(), getHeight(),this);
+            
+            setOpaque(false);
+            
+            super.paint(g);
+        }
+    }     
+
