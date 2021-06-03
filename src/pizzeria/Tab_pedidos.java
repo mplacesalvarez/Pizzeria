@@ -426,6 +426,28 @@ Connection connect;
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+int fila= jTable1.getSelectedRow();
+
+
+        
+         
+           String dni=jTextField2.getText();
+            
+            
+            PreparedStatement st = null;
+        try {
+            st = connect.prepareStatement("delete from Pedidos where DNI= '"+dni+"'");
+        } catch (SQLException ex) {
+            Logger.getLogger(Tab_pedidos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+          
+        try {
+            int res= st.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(Tab_pedidos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+
      
 
     }//GEN-LAST:event_jButton13ActionPerformed
